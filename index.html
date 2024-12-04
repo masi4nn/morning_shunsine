@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Pagi Bubub Kaffa</title>
+    <style>
+        body {
+            background-color: #87CEEB; /* Langit biru */
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            animation: rise 4s ease-in-out infinite alternate;
+            box-shadow: 0 0 30px 10px rgba(255, 255, 0, 0.5);
+        }
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+        .photo {
+            margin-top: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .greeting {
+            margin-top: 20px;
+        }
+        .greeting h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .greeting p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .emoji {
+            font-size: 30px;
+            margin-top: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Media Queries untuk layar HP */
+        @media (max-width: 480px) {
+            .sun {
+                width: 80px;
+                height: 80px;
+            }
+            .photo {
+                width: 100px;
+                height: 100px;
+            }
+            .greeting h1 {
+                font-size: 20px;
+            }
+            .greeting p {
+                font-size: 14px;
+            }
+            .emoji {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="photo">
+            <!-- Ganti 'foto.jpg' dengan nama file fotonya -->
+            <img src="gas selamat pagi/bubub.jpg.jpg" alt="Foto Bubub Kaffa">
+            <img src="https://drive.google.com/uc?id=1TtmKxTquDK453Q24pPrKlHpMKzh8K7AT" alt="Foto Bubub Kaffa">
+        </div>
+        <div class="greeting">
+            <h1>Selamat Pagi, Bubub Kaffa! ☀️</h1>
+            <p>Semoga hari ini penuh dengan senyum dan kebahagiaan.</p>
+            <p>Kamu adalah matahariku, yang selalu menerangi hariku. ❤️</p>
+            <div class="emoji">🌸✨🥰</div>
+        </div>
+        <div class="footer">Pesan ini dibuat dengan cinta. 😊</div>
+    </div>
+</body>
+</html>
